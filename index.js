@@ -11,6 +11,18 @@ const email = document.querySelector("#email");
 const haslo = document.querySelector("#haslo");
 const przyciskLogowania = document.querySelector("#zaloguj");
 const statusLogowania = document.querySelector("#statusLogowania");
+const pokazLogowanie = document.querySelector("#pokazLogowanie");
+const formularzLogowania = document.querySelector("#formularzLogowania");
+
+pokazLogowanie.addEventListener("click", function() {
+
+    if (formularzLogowania.style.display === "none") {
+        formularzLogowania.style.display = "block";
+    } else {
+        formularzLogowania.style.display = "none";
+    }
+
+});
 
 przyciskLogowania.addEventListener("click", async function() {
 
