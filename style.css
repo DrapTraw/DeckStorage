@@ -2,8 +2,13 @@ img
 {
 	width: 60px;
 }
+
 body {
     background-color: #1A2859;
+}
+
+h1 {
+    text-align: center;
 }
 
 #galeriaKart
