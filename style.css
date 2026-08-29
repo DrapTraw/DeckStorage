@@ -100,7 +100,7 @@ nav a:hover {
 #galeriaKart
 {
 display: grid;
-grid-template-columns: repeat(auto-fill, 80px);
+grid-template-columns: repeat(auto-fill, 70px);
 gap: 10px;
 }
 
