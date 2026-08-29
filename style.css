@@ -37,6 +37,15 @@ body {
     min-height: 100vh;
 }
 
+.tloGaleria {
+    background-image: url("assets/tloGaleria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
 h1 {
     text-align: center;
 	padding-top: 120px;
