@@ -9,6 +9,7 @@ body {
 
 }
 
+
 .tloIndex {
     background-image: url("assets/clash royale wallpaper 172.jpg");
     background-size: cover;
@@ -20,6 +21,14 @@ body {
 h1 {
     text-align: center;
 	padding-top: 120px;
+}
+
+.logowanie {
+    text-align: center;
+}
+
+#formularzLogowania {
+    display: none;
 }
 
 nav {
