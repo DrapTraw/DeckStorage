@@ -45,6 +45,14 @@ body {
     min-height: 100vh;
 }
 
+.tloDodaj {
+    background-image: url("assets/clashroyale4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 h1 {
     text-align: center;
 	padding-top: 120px;
