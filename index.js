@@ -10,6 +10,7 @@ console.log("Supabase w index log działa!");
 const email = document.querySelector("#email");
 const haslo = document.querySelector("#haslo");
 const przyciskLogowania = document.querySelector("#zaloguj");
+const statusLogowania = document.querySelector("#statusLogowania");
 
 przyciskLogowania.addEventListener("click", async function() {
 
@@ -25,6 +26,8 @@ przyciskLogowania.addEventListener("click", async function() {
 
     console.log("Zalogowano!");
     console.log(data.user);
+    statusLogowania.textContent =
+    "Zalogowano jako: " + data.user.email;
 });
 
 supabaseClientIndex.auth.getUser().then(function(result) {
@@ -33,12 +36,14 @@ supabaseClientIndex.auth.getUser().then(function(result) {
 
     if (user) {
         console.log("Jesteś zalogowany jako:", user.email);
+
+        statusLogowania.textContent =
+            "Zalogowano jako: " + user.email;
     } else {
         console.log("Nie jesteś zalogowany");
     }
 
 });
-
 supabaseClientIndex
     .from("Decki")
     .select("*")
