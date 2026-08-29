@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+
+    	<title>Dodaj zestaw - DUEL znajdowacz</title>
+
+    	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<h1>Dodaj deck</h1>
+
+    <label for="nazwaDecku">Nazwa decku:</label>
+    <input type="text" id="nazwaDecku">
+
+    <button id="dodajDeck">Sejw</button>
+<h2>Zakładki</h2>
+
+<div id="listaZakladek">
+</div>
+
+<button id="nowaZakladka">+ Nowa zakładka</button>
+	<h2>Twój deck</h2>
+
+    <div id="skladanyDeck">
+</div>
+
+	<h2>Karty do wyboru</h2>
+
+<div id="galeriaKart">
+</div>
+
+	<script src="script.js"></script>
+	<script src="dodaj.js"></script>
+	
+</body>
+</html>

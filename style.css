@@ -1,0 +1,69 @@
+img
+{
+	width: 60px;
+}
+#galeriaKart
+{
+display: grid;
+grid-template-columns: repeat(auto-fill, 80px);
+gap: 10px;
+}
+
+#galeriaDeckow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    gap: 10px;
+}
+
+.deck {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.deck h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.deckKarty {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.deckKarty img {
+    width: 100%;
+    height: auto;
+}
+
+#skladanyDeck {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+}
+
+#skladanyDeck img {
+    width: 70px;
+}
+.sekcjaZakladki {
+    margin-bottom: 40px;
+}
+
+.sekcjaZakladki > h2 {
+    margin-bottom: 15px;
+}
+
+.deck {
+    margin-bottom: 30px;
+}
+
+.deckKarty {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+}
+
+.deckKarty img {
+    width: 70px;
+    height: auto;
+}
