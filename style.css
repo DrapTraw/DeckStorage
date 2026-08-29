@@ -2,6 +2,10 @@ img
 {
 	width: 60px;
 }
+body {
+    background-color: #1A2859;
+}
+
 #galeriaKart
 {
 display: grid;
