@@ -45,6 +45,7 @@ supabaseClientIndex.auth.getUser().then(function(result) {
 
 });
 nav {
+    margin-top: 10%;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     padding: 1rem;
