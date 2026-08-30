@@ -42,6 +42,7 @@ body {
 	
 //index
 }
+
 #pokazLogowanie {
     background: #3B3B78;
     color: white;
@@ -114,6 +115,7 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 //tła
+
 .tloIndex {
     background-image: url("assets/clash royale wallpaper 172.jpg");
     background-size: cover;
@@ -141,6 +143,7 @@ nav a:hover {
     min-height: 100vh;
 }
 //decki
+
 #galeriaKart
 {
 display: grid;
