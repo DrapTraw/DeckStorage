@@ -54,6 +54,10 @@ wybraneKarty = [];
 skladanyDeck.innerHTML = "";
 nazwaDecku.value = "";
 
+document.querySelectorAll('#listaZakladek input[type="checkbox"]').forEach(function(checkbox) {
+    checkbox.checked = false;
+});
+
 });
 
 
