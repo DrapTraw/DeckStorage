@@ -44,14 +44,22 @@ const { data, error } = await supabaseClient
         zakladki: nazwyZakladek
     });
     if (error) {
-        console.error("Błąd:", error);
-        return;
-    }
+    console.error("Błąd:", error);
+    return;
+}
 
-    console.log("Deck zapisany!");
-    wybraneKarty = [];
-    skladanyDeck.innerHTML = "";
+console.log("Deck zapisany!");
+
+wybraneKarty = [];
+skladanyDeck.innerHTML = "";
+
+document.querySelectorAll(
+    '#listaZakladek input[type="checkbox"]'
+).forEach(function(checkbox) {
+    checkbox.checked = false;
 });
+
+nazwaDecku.value = "";
 
 const obrazyKart = galeriaKart.querySelectorAll("img");
 
