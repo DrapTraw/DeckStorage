@@ -17,9 +17,9 @@ przycisk.addEventListener("click", function() {
 });
 
 let wylosowanyDeck = document.querySelector("#wylosowanyDeck");
-let przycisk = document.querySelector(".tloLosuj button");
+let przyciskStart = document.querySelector(".tloLosuj button");
 
-przycisk.addEventListener("click", function() {
+przyciskStart.addEventListener("click", function() {
 
     wylosowanyDeck.innerHTML = "";
 
@@ -33,7 +33,6 @@ przycisk.addEventListener("click", function() {
             wylosowaneKarty.push(losowaKarta);
         }
     }
-
     for (let karta of wylosowaneKarty) {
 
         let obraz = document.createElement("img");
