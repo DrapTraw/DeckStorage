@@ -52,14 +52,11 @@ console.log("Deck zapisany!");
 
 wybraneKarty = [];
 skladanyDeck.innerHTML = "";
+nazwaDecku.value = "";
 
-document.querySelectorAll(
-    '#listaZakladek input[type="checkbox"]'
-).forEach(function(checkbox) {
-    checkbox.checked = false;
 });
 
-nazwaDecku.value = "";
+
 
 const obrazyKart = galeriaKart.querySelectorAll("img");
 
