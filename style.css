@@ -206,3 +206,22 @@ gap: 10px;
     width: 70px;
     height: auto;
 }
+
+.sekcjaZakladki > h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+
+    text-align: center;
+    margin: 20px auto 15px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+
+    padding: 8px 25px;
+    border: none;
+    border-radius: 15px;
+
+    width: fit-content;
+}
