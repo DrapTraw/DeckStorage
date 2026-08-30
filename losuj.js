@@ -15,3 +15,32 @@ przycisk.addEventListener("click", function() {
 
     console.log("Wylosowane karty:", wylosowaneKarty);
 });
+
+let wylosowanyDeck = document.querySelector("#wylosowanyDeck");
+let przycisk = document.querySelector(".tloLosuj button");
+
+przycisk.addEventListener("click", function() {
+
+    wylosowanyDeck.innerHTML = "";
+
+    let wylosowaneKarty = [];
+
+    while (wylosowaneKarty.length < 8) {
+
+        let losowaKarta = karty[Math.floor(Math.random() * karty.length)];
+
+        if (!wylosowaneKarty.includes(losowaKarta)) {
+            wylosowaneKarty.push(losowaKarta);
+        }
+    }
+
+    for (let karta of wylosowaneKarty) {
+
+        let obraz = document.createElement("img");
+
+        obraz.src = "karty/" + karta;
+
+        wylosowanyDeck.appendChild(obraz);
+    }
+
+});
