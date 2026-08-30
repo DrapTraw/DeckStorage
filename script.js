@@ -1,4 +1,4 @@
-let karty = 
+window.karty = 
 [
 //comm
 "RoyalRecruits.png",
@@ -128,16 +128,20 @@ let karty =
 "GoldenKnight.webp",
 "LittlePrince.webp",
 ]
-let galeria = document.querySelector("#galeriaKart");
+function pokazKarty() {
+    let galeria = document.querySelector("#galeriaKart");
 
-for (let karta of karty) 
-{
-console.log(karta);
+    if (!galeria) return;
 
-let obraz = document.createElement("img");
+    for (let karta of karty) {
+        console.log(karta);
 
-obraz.src = "karty/" + karta;
+        let obraz = document.createElement("img");
 
-galeria.appendChild(obraz);
+        obraz.src = "karty/" + karta;
 
+        galeria.appendChild(obraz);
+    }
 }
+
+pokazKarty();
