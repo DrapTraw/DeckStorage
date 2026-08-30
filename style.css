@@ -6,7 +6,7 @@ img
 body {
     background-color: #1B2E34;
 	color: white;
-	
+}
 .homeButton {
     display: inline-flex;
     justify-content: center;
@@ -40,8 +40,7 @@ body {
     z-index: -1;
 }
 	
-//index
-}
+/* index */
 
 #pokazLogowanie {
     background: #3B3B78;
@@ -114,7 +113,7 @@ nav a:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
-//tła
+/* tła */
 
 .tloIndex {
     background-image: url("assets/clash royale wallpaper 172.jpg");
@@ -142,7 +141,7 @@ nav a:hover {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
-//decki
+/* decki */
 
 #galeriaKart
 {
