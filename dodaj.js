@@ -49,16 +49,8 @@ const { data, error } = await supabaseClient
     }
 
     console.log("Deck zapisany!");
-});
-
-supabaseClient.auth.getUser().then(function(result) {
-
-    if (result.data.user) {
-        console.log("DODAJ: zalogowany jako:", result.data.user.email);
-    } else {
-        console.log("DODAJ: NIEZALOGOWANY");
-    }
-
+    wybraneKarty = [];
+    skladanyDeck.innerHTML = "";
 });
 
 const obrazyKart = galeriaKart.querySelectorAll("img");
