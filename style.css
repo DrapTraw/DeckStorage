@@ -244,4 +244,7 @@ gap: 10px;
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+    display: block;
+    margin: 20px auto 0;
 }
