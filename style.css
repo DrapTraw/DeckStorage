@@ -234,3 +234,14 @@ gap: 10px;
 
     width: fit-content;
 }
+/*losuj*/
+.tloLosuj button {
+    background: #3B3B78;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    padding: 8px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
