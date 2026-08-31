@@ -65,12 +65,21 @@ async function losujDeck() {
     }
 
     const losowyDeck =
-        daneDeckow[Math.floor(Math.random() * daneDeckow.length)];
+    daneDeckow[Math.floor(Math.random() * daneDeckow.length)];
 
-    console.log("Wylosowany deck:", losowyDeck);
+console.log("Wylosowany deck:", losowyDeck);
+
+nazwaWylosowanegoDecku.textContent = losowyDeck.nazwa;
+
+wylosowanyDeck.innerHTML = "";
+
+for (let karta of losowyDeck.karty) {
+
+    let obraz = document.createElement("img");
+
+    obraz.src = "karty/" + karta;
+
+    wylosowanyDeck.appendChild(obraz);
 }
-const przyciskLosujDeck = document.querySelector("#losujDeck");
 
-przyciskLosujDeck.addEventListener("click", function() {
-    losujDeck();
-});
+I dostaniesz:
