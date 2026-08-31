@@ -69,6 +69,11 @@ async function pobierzDane() {
 
             divDeck.appendChild(nazwa);
 
+            const ustawienia = document.createElement("button");
+            ustawienia.textContent = "⋮";
+            ustawienia.classList.add("ustawieniaDecku");
+
+            divDeck.appendChild(ustawienia);
 
             const divKarty = document.createElement("div");
             divKarty.classList.add("deckKarty");
