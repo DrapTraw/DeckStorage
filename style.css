@@ -243,6 +243,24 @@ gap: 10px;
 #galeriaKart img.wybrana {
     filter: brightness(45%);
 }
+
+.menuZapisu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: fit-content;
+    margin: 20px auto;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    padding: 12px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
 /*losuj*/
 .tloLosuj button {
     background: #3B3B78;
