@@ -7,6 +7,10 @@ body {
     background-color: #1B2E34;
 	color: white;
 }
+
+h2 {
+    text-align: center;
+}
 .homeButton {
     display: inline-flex;
     justify-content: center;
@@ -322,8 +326,9 @@ gap: 10px;
     border-radius: 25px;
     width: 38px;
     height: 38px;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
+	line-height: 1;
     transition: all 0.2s ease;
 }
 
