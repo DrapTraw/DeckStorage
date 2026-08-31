@@ -7,23 +7,30 @@ const LosujsupabaseClient = window.supabase.createClient(
 );
 
 let wylosowanyDeck = document.querySelector("#wylosowanyDeck");
-let przyciskStart = document.querySelector(".tloLosuj button");
 let nazwaWylosowanegoDecku = document.querySelector("#nazwaWylosowanegoDecku");
+
+
+// LOSOWANIE POJEDYNCZYCH KART
+
+let przyciskStart = document.querySelector("#losujKarty");
 
 przyciskStart.addEventListener("click", function() {
 
+    nazwaWylosowanegoDecku.textContent = "";
     wylosowanyDeck.innerHTML = "";
 
     let wylosowaneKarty = [];
 
     while (wylosowaneKarty.length < 8) {
 
-        let losowaKarta = karty[Math.floor(Math.random() * karty.length)];
+        let losowaKarta =
+            karty[Math.floor(Math.random() * karty.length)];
 
         if (!wylosowaneKarty.includes(losowaKarta)) {
             wylosowaneKarty.push(losowaKarta);
         }
     }
+
     for (let karta of wylosowaneKarty) {
 
         let obraz = document.createElement("img");
@@ -35,10 +42,13 @@ przyciskStart.addEventListener("click", function() {
 
 });
 
+
+// LOSOWANIE GOTOWEGO DECKU Z GALERII
+
 async function losujDeck() {
 
     const { data: daneDeckow, error: bladDeckow } =
-        await DeckisupabaseClient
+        await LosujsupabaseClient
             .from("Decki")
             .select("*");
 
@@ -48,24 +58,27 @@ async function losujDeck() {
     }
 
     const losowyDeck =
-    daneDeckow[Math.floor(Math.random() * daneDeckow.length)];
+        daneDeckow[Math.floor(Math.random() * daneDeckow.length)];
 
-console.log("Wylosowany deck:", losowyDeck);
+    console.log("Wylosowany deck:", losowyDeck);
 
-nazwaWylosowanegoDecku.textContent = losowyDeck.nazwa;
+    nazwaWylosowanegoDecku.textContent = losowyDeck.nazwa;
 
-wylosowanyDeck.innerHTML = "";
+    wylosowanyDeck.innerHTML = "";
 
-for (let karta of losowyDeck.karty) {
+    for (let karta of losowyDeck.karty) {
 
-    let obraz = document.createElement("img");
+        let obraz = document.createElement("img");
 
-    obraz.src = "karty/" + karta;
+        obraz.src = "karty/" + karta;
 
-    wylosowanyDeck.appendChild(obraz);
+        wylosowanyDeck.appendChild(obraz);
+    }
 }
-}
-const przyciskLosujDeck = document.querySelector("#losujDeck");
+
+
+const przyciskLosujDeck =
+    document.querySelector("#losujDeck");
 
 przyciskLosujDeck.addEventListener("click", function() {
     losujDeck();
