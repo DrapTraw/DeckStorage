@@ -141,10 +141,24 @@ for (let zakladka of data) {
 pobierzZakładki();
 
 const przyciskNowaZakladka = document.querySelector("#nowaZakladka");
+const formularzZakladki = document.querySelector("#formularzZakladki");
+const nazwaNowejZakladki = document.querySelector("#nazwaNowejZakladki");
+const przyciskDodajZakladke = document.querySelector("#dodajZakladke");
 
-przyciskNowaZakladka.addEventListener("click", async function() {
+przyciskNowaZakladka.addEventListener("click", function() {
 
-    const nazwa = prompt("Podaj nazwę nowej zakładki:");
+    if (formularzZakladki.style.display === "flex") {
+        formularzZakladki.style.display = "none";
+    } else {
+        formularzZakladki.style.display = "flex";
+        nazwaNowejZakladki.focus();
+    }
+
+});
+
+przyciskDodajZakladke.addEventListener("click", async function() {
+
+    const nazwa = nazwaNowejZakladki.value.trim();
 
     if (!nazwa) {
         return;
@@ -163,6 +177,9 @@ przyciskNowaZakladka.addEventListener("click", async function() {
     }
 
     console.log("Dodano zakładkę:", data);
+
+    nazwaNowejZakladki.value = "";
+    formularzZakladki.style.display = "none";
 
     pobierzZakładki();
 });
