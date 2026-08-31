@@ -53,6 +53,10 @@ console.log("Deck zapisany!");
 wybraneKarty = [];
 skladanyDeck.innerHTML = "";
 nazwaDecku.value = "";
+    
+galeriaKart.querySelectorAll("img.wybrana").forEach(function(obraz) {
+    obraz.classList.remove("wybrana");
+});
 
 document.querySelectorAll('#listaZakladek input[type="checkbox"]').forEach(function(checkbox) {
     checkbox.checked = false;
@@ -79,6 +83,7 @@ for (let obraz of obrazyKart) {
         }
 
         wybraneKarty.push(obraz.src);
+        obraz.classList.add("wybrana");
 
         const nowaKarta = document.createElement("img");
         nowaKarta.src = obraz.src;
@@ -91,7 +96,7 @@ for (let obraz of obrazyKart) {
             if (indeks !== -1) {
                 wybraneKarty.splice(indeks, 1);
             }
-
+            obraz.classList.remove("wybrana");
             nowaKarta.remove();
         });
 
