@@ -234,6 +234,15 @@ gap: 10px;
 
     width: fit-content;
 }
+/*przyciemnianie wybranych*/
+#galeriaKart img {
+    transition: filter 0.2s ease;
+    cursor: pointer;
+}
+
+#galeriaKart img.wybrana {
+    filter: brightness(45%);
+}
 /*losuj*/
 .tloLosuj button {
     background: #3B3B78;
