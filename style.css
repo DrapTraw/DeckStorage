@@ -256,6 +256,10 @@ gap: 10px;
     justify-content: center;
     gap: 10px;
 }
+#wylosowanyDeck img {
+    width: 80px;
+    height: auto;
+}
 #wylosowanyDeck {
     display: grid;
     grid-template-columns: repeat(4, 70px);
