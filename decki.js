@@ -1,4 +1,4 @@
-const DeckisupabaseUrl = "https://abftkotwuvauggougqyr.supabase.co";
+    const DeckisupabaseUrl = "https://abftkotwuvauggougqyr.supabase.co";
 const DeckisupabaseKey = "sb_publishable_amq_kNl5NtwcTq-W6udA5w_vs7oI0UG";
 
 const DeckisupabaseClient = window.supabase.createClient(
@@ -72,6 +72,21 @@ async function pobierzDane() {
             const ustawienia = document.createElement("button");
             ustawienia.textContent = "⋮";
             ustawienia.classList.add("ustawieniaDecku");
+            ustawienia.addEventListener("click", function() {
+
+            const okno = document.querySelector("#oknoUstawienDecku");
+
+             okno.style.display = "flex";
+
+            });
+            const zamknijUstawienia =
+            document.querySelector("#zamknijUstawienia");
+        
+            zamknijUstawienia.addEventListener("click", function() {
+
+            document.querySelector("#oknoUstawienDecku").style.display = "none";
+
+            });
 
             divDeck.appendChild(ustawienia);
 
