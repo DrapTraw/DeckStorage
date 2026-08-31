@@ -23,9 +23,9 @@ przycisk.addEventListener("click", function() {
 
     console.log("Wylosowane karty:", wylosowaneKarty);
 });
-
 let wylosowanyDeck = document.querySelector("#wylosowanyDeck");
 let przyciskStart = document.querySelector(".tloLosuj button");
+let nazwaWylosowanegoDecku = document.querySelector("#nazwaWylosowanegoDecku");
 
 przyciskStart.addEventListener("click", function() {
 
@@ -81,5 +81,8 @@ for (let karta of losowyDeck.karty) {
 
     wylosowanyDeck.appendChild(obraz);
 }
+const przyciskLosujDeck = document.querySelector("#losujDeck");
 
-I dostaniesz:
+przyciskLosujDeck.addEventListener("click", function() {
+    losujDeck();
+});
