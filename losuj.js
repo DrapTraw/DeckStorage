@@ -1,9 +1,9 @@
-const DeckisupabaseUrl = "https://abftkotwuvauggougqyr.supabase.co";
-const DeckisupabaseKey = "sb_publishable_amq_kNl5NtwcTq-W6udA5w_vs7oI0UG";
+const LosujsupabaseUrl = "https://abftkotwuvauggougqyr.supabase.co";
+const LosujsupabaseKey = "sb_publishable_amq_kNl5NtwcTq-W6udA5w_vs7oI0UG";
 
-const DeckisupabaseClient = window.supabase.createClient(
-    DeckisupabaseUrl,
-    DeckisupabaseKey
+const LosujsupabaseClient = window.supabase.createClient(
+    LosujsupabaseUrl,
+    LosujsupabaseKey
 );
 
 let przycisk = document.querySelector(".tloLosuj button");
