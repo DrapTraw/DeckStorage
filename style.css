@@ -170,6 +170,18 @@ gap: 10px;
 
 .deck {
     padding: 10px;
+    position: relative;
+}
+
+.ustawieniaDecku {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .deck h2 {
