@@ -251,6 +251,11 @@ gap: 10px;
 .tloLosuj h2 {
     text-align: center;
 }
+.przyciskiLosuj {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 #wylosowanyDeck {
     display: grid;
     grid-template-columns: repeat(4, 70px);
