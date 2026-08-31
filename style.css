@@ -335,6 +335,48 @@ gap: 10px;
 #nowaZakladka:hover {
     background: rgba(255, 255, 255, 0.12);
 }
+#formularzZakladki {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto 20px;
+}
+
+#nazwaNowejZakladki {
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+    padding: 5px 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+#dodajZakladke {
+    height: 30px;
+    padding: 0 14px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#dodajZakladke:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
 
 /*losuj*/
 .tloLosuj button {
