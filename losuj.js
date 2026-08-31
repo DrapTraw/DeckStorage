@@ -6,23 +6,6 @@ const LosujsupabaseClient = window.supabase.createClient(
     LosujsupabaseKey
 );
 
-let przycisk = document.querySelector(".tloLosuj button");
-
-przycisk.addEventListener("click", function() {
-
-    let wylosowaneKarty = [];
-
-    while (wylosowaneKarty.length < 8) {
-
-        let losowaKarta = karty[Math.floor(Math.random() * karty.length)];
-
-        if (!wylosowaneKarty.includes(losowaKarta)) {
-            wylosowaneKarty.push(losowaKarta);
-        }
-    }
-
-    console.log("Wylosowane karty:", wylosowaneKarty);
-});
 let wylosowanyDeck = document.querySelector("#wylosowanyDeck");
 let przyciskStart = document.querySelector(".tloLosuj button");
 let nazwaWylosowanegoDecku = document.querySelector("#nazwaWylosowanegoDecku");
@@ -80,6 +63,7 @@ for (let karta of losowyDeck.karty) {
     obraz.src = "karty/" + karta;
 
     wylosowanyDeck.appendChild(obraz);
+}
 }
 const przyciskLosujDeck = document.querySelector("#losujDeck");
 
