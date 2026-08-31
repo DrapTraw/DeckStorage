@@ -43,3 +43,26 @@ przyciskStart.addEventListener("click", function() {
     }
 
 });
+
+async function losujDeck() {
+
+    const { data: daneDeckow, error: bladDeckow } =
+        await DeckisupabaseClient
+            .from("Decki")
+            .select("*");
+
+    if (bladDeckow) {
+        console.error("Błąd pobierania decków:", bladDeckow);
+        return;
+    }
+
+    const losowyDeck =
+        daneDeckow[Math.floor(Math.random() * daneDeckow.length)];
+
+    console.log("Wylosowany deck:", losowyDeck);
+}
+const przyciskLosujDeck = document.querySelector("#losujDeck");
+
+przyciskLosujDeck.addEventListener("click", function() {
+    losujDeck();
+});
